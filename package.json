@@ -1,0 +1,19 @@
+{
+  "name": "@kapwing/plugin",
+  "version": "1.0.0",
+  "description": "Official package for building plugins on Kapwing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kapwing/kapwing-plugin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kapwing/kapwing-plugin/issues"
+  },
+  "homepage": "https://github.com/kapwing/kapwing-plugin#readme"
+}
