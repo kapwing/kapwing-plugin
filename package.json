@@ -1,6 +1,6 @@
 {
   "name": "@kapwing/plugin-helpers",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Official package for building plugins on Kapwing",
   "main": "lib/index.js",
   "scripts": {
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kapwing/kapwing-plugin.git"
+    "url": "git+https://github.com/kapwing/plugin-helpers.git"
   },
-  "author": "",
+  "author": "Kapwing, Inc.",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kapwing/kapwing-plugin/issues"
+    "url": "https://github.com/kapwing/plugin-helpers/issues"
   },
-  "homepage": "https://github.com/kapwing/kapwing-plugin#readme",
+  "homepage": "https://github.com/kapwing/plugin-helpers#readme",
   "files": [
     "lib/**/*"
   ],
