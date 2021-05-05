@@ -1,6 +1,6 @@
 {
   "name": "@kapwing/plugin-helpers",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Official package for building plugins on Kapwing",
   "main": "lib/index.js",
   "scripts": {
