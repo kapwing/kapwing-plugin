@@ -1,4 +1,7 @@
 export const addImageFromUrl = (imageUrl: string) => {
-  console.info("calling add image from url");
-  console.info(imageUrl);
+  // we post the url to the parent
+  window.parent.postMessage(
+    { message: "plugin-helpers-add-image-from-url", value: { url: imageUrl } },
+    "*"
+  );
 };
