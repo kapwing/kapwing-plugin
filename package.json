@@ -1,8 +1,8 @@
 {
   "name": "@kapwing/plugin-helpers",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Official package for building plugins on Kapwing",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
