@@ -1,6 +1,6 @@
 {
   "name": "@kapwing/plugin-helpers",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Official package for building plugins on Kapwing",
   "main": "index.js",
   "scripts": {
@@ -22,6 +22,7 @@
   "files": [
     "lib/**/*"
   ],
+  "types": "./lib/main.d.ts",
   "devDependencies": {
     "prettier": "^2.2.1",
     "tslint": "^6.1.3",
