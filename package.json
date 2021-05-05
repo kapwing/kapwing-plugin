@@ -8,7 +8,7 @@
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
-    "deploy": "npm version patch && npm publish"
+    "deploy": "npm version patch && git add . && git commit -m 'bump version' && git push && npm publish"
   },
   "repository": {
     "type": "git",
