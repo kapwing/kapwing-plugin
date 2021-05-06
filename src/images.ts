@@ -1,7 +1,12 @@
-export const addImageFromUrl = (imageUrl: string) => {
+import { PluginInfoInterface } from "./types";
+
+export const addImageFromUrl = (
+  imageUrl: string,
+  pluginInfo: PluginInfoInterface
+) => {
   // we post the url to the parent
   window.parent.postMessage(
-    { message: "plugin-helpers-add-image-from-url", value: { url: imageUrl } },
+    { message: "add-image-from-url", value: { url: imageUrl, pluginInfo } },
     "*"
   );
 };
