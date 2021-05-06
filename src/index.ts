@@ -9,7 +9,3 @@ export const initKapwing = (pluginInfo: PluginInfoInterface) => {
   };
   return APIWrapper;
 };
-
-export const kapwing = {
-  initKapwing,
-};
