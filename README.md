@@ -26,5 +26,5 @@ Finally, call the available functions to add images to Kapwing.
 
 ```
 const url = "https://www.images.com/sample-image.jpg"
-kapwing.addImageFromUrl(url);
+kapwing.video.addFromUrl(url);
 ```
