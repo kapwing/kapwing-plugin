@@ -6,7 +6,7 @@ export const addImageFromUrl = (
 ) => {
   // we post the url to the parent
   window.parent.postMessage(
-    { message: "add-image-from-url", value: { url: imageUrl, pluginInfo } },
+    { message: "image-add-from-url", value: { url: imageUrl, pluginInfo } },
     "*"
   );
 };

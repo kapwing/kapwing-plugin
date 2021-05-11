@@ -5,7 +5,7 @@ export const addVideoFromUrl = (
   pluginInfo: PluginInfoInterface
 ) => {
   window.parent.postMessage(
-    { message: "add-video-from-url", value: { url: videoUrl, pluginInfo } },
+    { message: "video-add-from-url", value: { url: videoUrl, pluginInfo } },
     "*"
   );
 };

@@ -4,11 +4,15 @@ import { addVideoFromUrl } from "./videos";
 
 export const initKapwing = (pluginInfo: PluginInfoInterface) => {
   const APIWrapper = {
-    addImageFromUrl: (imageUrl: string) => {
-      addImageFromUrl(imageUrl, pluginInfo);
+    videos: {
+      addFromUrl: (videoUrl: string) => {
+        addVideoFromUrl(videoUrl, pluginInfo);
+      },
     },
-    addVideoFromUrl: (videoUrl: string) => {
-      addVideoFromUrl(videoUrl, pluginInfo);
+    images: {
+      addFromUrl: (imageUrl: string) => {
+        addImageFromUrl(imageUrl, pluginInfo);
+      },
     },
   };
   return APIWrapper;
