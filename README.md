@@ -12,19 +12,37 @@ To get started with building a plugin for Kapwing, please reach out directly to 
 
 First, import the `initKapwing` function from the plugin:
 
-```
+```javascript
 import { initKapwing } from "@kapwing/plugin-helpers";
 ```
 
 Then, later in your code or component, initialize the plugin with your plugin name. Your plugin name must be approved for this to work properly:
 
-```
+```javascript
 const kapwing = initKapwing({ id: "my-plugin-id" });
 ```
 
 Finally, call the available functions to add images to Kapwing.
 
-```
-const url = "https://www.images.com/sample-image.jpg"
+```javascript
+const url = "https://www.images.com/sample-image.jpg";
 kapwing.video.addFromUrl(url);
 ```
+
+The full api is listed in the sections below. Currently there are two namespaces images and videos.
+
+### Videos
+
+```javascript
+kapwing.video.addFrom(url);
+```
+
+Adds the video at the given url to the canvas.
+
+### Images
+
+```javascript
+kapwing.image.addFrom(url);
+```
+
+Adds the image at the given url to the canvas.
