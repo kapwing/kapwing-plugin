@@ -37,7 +37,16 @@ The full api is listed in the sections below. Currently there are two namespaces
 kapwing.video.addFrom(url);
 ```
 
-Adds the video at the given url to the canvas.
+Adds the video at the given url to the canvas. A response will be sent back via the postMessage api. Response:
+
+```javascript
+{
+  success: boolean,
+  url: string,
+}
+```
+
+Success will indicate whether the layer was added to the canvas. URL will match the link that was sent originally. This helps to distinguish between layers when added simultaneously.
 
 ### Images
 
@@ -45,4 +54,13 @@ Adds the video at the given url to the canvas.
 kapwing.image.addFrom(url);
 ```
 
-Adds the image at the given url to the canvas.
+Adds the image at the given url to the canvas. A response will be sent back via the postMessage api. Response:
+
+```javascript
+{
+  success: boolean,
+  url: string,
+}
+```
+
+Success will indicate whether the layer was added to the canvas. URL will match the link that was sent originally. This helps to distinguish between layers when added simultaneously.
